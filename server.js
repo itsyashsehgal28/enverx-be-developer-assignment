@@ -5,12 +5,16 @@ app.use(express.json());
 
 const port = 8081;
 
+const postRoutes = require("./postRoutes");
+
 app.get("/" , (req , res) => {
-    res.status(200).send({message : "Server is up and running"});
+    res.status(200).json({message : "Server is up and running"});
 });
 
+app.get("/posts" , postRoutes);
+
 app.get("*" , (req , res) => {
-    res.status(501).send({message : "Page not found "})
+    res.status(404).json({message : "Page not found Error 404"});
 });
 
 app.listen(port , () => {

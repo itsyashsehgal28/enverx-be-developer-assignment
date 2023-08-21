@@ -50,3 +50,25 @@ The estimated time to complete this assignment is 6-7 hours, but it may vary bas
 2. Please complete the assignment and submit it to us by the submission deadline assigned to you. 
 3. follow the instructions carefully, as we will evaluate your code, documentation, and adherence to best practices. Once you have finished, please send us the GitHub repository link.
 4. If you have any questions or need further clarification, please don't hesitate to reach out to us at hr@enverx.com. We look forward to reviewing your work and discussing it with you in the next stage of the interview process.
+
+
+
+# Starting with the project 
+1. fork the repository using ----> git clone "repository url" , cd into the working directory 
+2. make a fresh pull using ----> git pull -f
+3. make a new branch development using -----> git checkout -b development
+4. make a new file and do the first commit to check everything is working or not 
+5. Server initialisation ----> npm init
+6. install node in pc and express , mongoose , dotenv , nodemon through npm install after initialisation (npm init) 
+7. install nodemon as a developer to use developer dependencies ----> npm i nodemon --save-dev
+8. make changes in the script , "start" : "node server.js" , "dev" : "nodemon server.js"
+
+
+
+# Route and Endpoints 
+
+- `GET /posts` - Get all blog posts (Mandatory: Apply sorting based on created Date, blog name and filters based on category).
+- `GET /posts/:id` - Get a specific blog post by ID.
+- `POST /posts` - Create a new blog post.
+- `PUT /posts/:id` - Update an existing blog post.
+- `DELETE /posts/:id` - Delete a blog post.
