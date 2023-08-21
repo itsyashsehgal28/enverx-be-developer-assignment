@@ -3,6 +3,14 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
+const dotenv = require("dotenv");
+// importing dotenv(.env) file for mongoDB URL and conection purposes 
+dotenv.config();
+// to activate dotenv 
+
+const DbConnection = require("./databaseConnection");
+DbConnection();
+
 const port = 8081;
 
 const postRoutes = require("./postRoutes");
