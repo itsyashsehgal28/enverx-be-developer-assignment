@@ -11,19 +11,26 @@ dotenv.config();
 const DbConnection = require("./databaseConnection");
 DbConnection();
 
-const port = 8081;
+const blogModel = require("./blogModel");
 
-const postRoutes = require("./postRoutes");
+const blogRoutes = require("./blogRoutes");
+
+
+
+
+const port = 8081;
 
 app.get("/" , (req , res) => {
     res.status(200).json({message : "Server is up and running"});
 });
 
-app.get("/posts" , postRoutes);
+app.use("/posts" , blogRoutes);
 
 app.get("*" , (req , res) => {
     res.status(404).json({message : "Page not found Error 404"});
 });
+
+
 
 app.listen(port , () => {
     console.log(`Node.js server started at port ${port}`);

@@ -72,3 +72,11 @@ The estimated time to complete this assignment is 6-7 hours, but it may vary bas
 - `POST /posts` - Create a new blog post.
 - `PUT /posts/:id` - Update an existing blog post.
 - `DELETE /posts/:id` - Delete a blog post.
+
+
+# MVC Architecture 
+>> We will be using MVC architecture here 
+
+>> M : modal 
+>> V : View 
+>> C : Controller
