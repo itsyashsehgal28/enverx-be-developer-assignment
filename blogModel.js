@@ -18,10 +18,10 @@ const blogSchema = new Schema ({
         required : true
     } , 
 
-    "title" : {
-        type : String , 
-        required : true
-    } , 
+    "createdAt" : {
+        type : Date , 
+        required : false
+    }, 
 },
 {
     timestamps : true , 
