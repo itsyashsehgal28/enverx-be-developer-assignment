@@ -27,7 +27,7 @@ app.get("/" , (req , res) => {
 app.use("/posts" , blogRoutes);
 
 app.get("*" , (req , res) => {
-    res.status(404).json({message : "Page not found Error 404"});
+    res.status(501).json({message : "Page not Implemented Error 501"});
 });
 
 

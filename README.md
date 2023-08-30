@@ -64,6 +64,12 @@ The estimated time to complete this assignment is 6-7 hours, but it may vary bas
 8. make changes in the script , "start" : "node server.js" , "dev" : "nodemon server.js"
 
 
+# Intialize a MongoDB project 
+>> mongodb.com make a new project
+>> connect the database to the project using mongo url from drivers and paste it in the .env file 
+>> hide the .env file by adding it to gitignore
+>> make a databaseConnection file used to connect to the database and fetch information from the database
+
 
 # Route and Endpoints 
 
@@ -80,3 +86,30 @@ The estimated time to complete this assignment is 6-7 hours, but it may vary bas
 >> M : modal 
 >> V : View 
 >> C : Controller
+
+# Creating a model for the database 
+>> create a schema named blogSchema , mention the field names like title , content , category , timestamps , you can also add fields as per your choice 
+>> make validations for the data like required , minlength , maxlength , enum etc. 
+>> export the model to the server.js file 
+
+# Route file 
+>> this will be the file where all routes of type "/posts" will be available 
+>> add all routes and direct them to their respective controllers
+
+# Controller file 
+>> this file will function as the brain of the APIs 
+>> all functions and commands with respect to URL will take place in this file 
+
+# Test the project APIs 
+>> testing can be done with different applications like postman , cURL or thunderClient 
+>> here i have used postman and thunderClient
+
+
+# workflow
+
+>> server.js >> blogroutes.js >> blogControllers.js
+
+>> databaseConnection.js is the database connection file it has no relation to the flow 
+>> package.json contains the list of packages with their versions it has no relation to the flow 
+>> blogModel.js contains the model according to which the values in the database will be stored 
+
